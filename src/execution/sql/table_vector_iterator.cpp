@@ -108,7 +108,6 @@ class ScanTask {
 }  // namespace
 
 bool TableVectorIterator::ParallelScan(uint32_t table_oid, uint32_t *col_oids, uint32_t num_oids,
-                                       ThreadStateContainer *thread_states,
                                        const ScanFn scan_fn, exec::ExecutionContext *exec_ctx) {
 
   // Lookup table
